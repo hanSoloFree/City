@@ -17,15 +17,15 @@ enum Entertainment: String, CaseIterable {
     var image: String {
         switch self {
         case .build1:
-            return "entertainment-1"
+            return "entertainment"
         case .build2:
-            return "entertainment-1"
+            return "entertainment"
         case .build3:
             return "entertainment-2"
         case .build4:
             return "entertainment-2"
         case .build5:
-            return "entertainment-1"
+            return "entertainment"
         }
     }
 }
