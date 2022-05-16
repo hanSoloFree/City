@@ -142,13 +142,6 @@
 			path = Settings;
 			sourceTree = "<group>";
 		};
-		637281E028241C61008D3F3C /* Utilites */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Utilites;
-			sourceTree = "<group>";
-		};
 		637957D12824101A00E0B190 = {
 			isa = PBXGroup;
 			children = (
@@ -173,7 +166,6 @@
 				634676B72829CD4D00C57593 /* Sounds */,
 				634676B22829B5ED00C57593 /* Global */,
 				6348B3BD28292F1A005095A1 /* Objects */,
-				637281E028241C61008D3F3C /* Utilites */,
 				637957DD2824101A00E0B190 /* AppDelegate.swift */,
 				637957F1282410F300E0B190 /* Screens */,
 				637957E62824101C00E0B190 /* Assets.xcassets */,

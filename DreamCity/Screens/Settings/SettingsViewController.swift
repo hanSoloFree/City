@@ -94,3 +94,4 @@ class SettingsViewController: UIViewController {
         self.dismiss(animated: true)
     }
 }
+
