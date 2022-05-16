@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Settings View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController definesPresentationContext="YES" providesPresentationContextTransitionStyle="YES" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="Y6W-OH-hqX" customClass="SettingsViewController" customModule="DreamCity" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iFA-qy-p0s">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="D2f-QG-ABw">
+                                <rect key="frame" x="50" y="200" width="314" height="496"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="314" id="QAM-Wb-WXH"/>
+                                    <constraint firstAttribute="height" constant="496" id="hvc-94-gXA"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="3Ym-nW-wV3">
+                                <rect key="frame" x="80" y="230" width="254" height="436"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Ud-2z-nPs">
+                                        <rect key="frame" x="0.0" y="0.0" width="254" height="11"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g9O-9U-glQ">
+                                        <rect key="frame" x="0.0" y="41" width="254" height="40"/>
+                                        <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="40"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rOG-tu-XD6">
+                                        <rect key="frame" x="0.0" y="111" width="254" height="11"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="iPa-mD-6RV">
+                                        <rect key="frame" x="0.0" y="152" width="254" height="150"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="2PK-PY-g84">
+                                                <rect key="frame" x="0.0" y="0.0" width="254" height="30"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Music" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zJC-wu-OmS">
+                                                        <rect key="frame" x="0.0" y="0.0" width="145" height="30"/>
+                                                        <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="30"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sas-tb-VVy">
+                                                        <rect key="frame" x="205" y="0.0" width="51" height="30"/>
+                                                        <connections>
+                                                            <action selector="musicSwitch:" destination="Y6W-OH-hqX" eventType="valueChanged" id="aIg-LB-lkr"/>
+                                                        </connections>
+                                                    </switch>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="qaH-eE-5b3">
+                                                <rect key="frame" x="0.0" y="60" width="254" height="30"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sound effects" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QXo-rO-Ib0">
+                                                        <rect key="frame" x="0.0" y="0.0" width="145" height="30"/>
+                                                        <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="30"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b45-eR-nuX">
+                                                        <rect key="frame" x="205" y="0.0" width="51" height="30"/>
+                                                        <connections>
+                                                            <action selector="soundEffectsSwitch:" destination="Y6W-OH-hqX" eventType="valueChanged" id="nEr-LU-jP8"/>
+                                                        </connections>
+                                                    </switch>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="Ngd-xp-Qkt">
+                                                <rect key="frame" x="0.0" y="120" width="254" height="30"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Borders" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eOr-AC-7Do">
+                                                        <rect key="frame" x="0.0" y="0.0" width="145" height="30"/>
+                                                        <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="30"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SrI-aL-Oee">
+                                                        <rect key="frame" x="205" y="0.0" width="51" height="30"/>
+                                                        <connections>
+                                                            <action selector="bordersSwitch:" destination="Y6W-OH-hqX" eventType="valueChanged" id="Mdi-nB-qeE"/>
+                                                        </connections>
+                                                    </switch>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jyd-Ua-0NH">
+                                        <rect key="frame" x="0.0" y="332" width="254" height="0.0"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qas-pd-X9T">
+                                        <rect key="frame" x="0.0" y="362" width="254" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="rKM-uk-Zti"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="30"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="titleEdgeInsets" minX="0.0" minY="6" maxX="0.0" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Delete City"/>
+                                        <connections>
+                                            <action selector="deleteCityButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="2By-30-626"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w1T-lE-edZ">
+                                        <rect key="frame" x="0.0" y="436" width="254" height="0.0"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="close" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Il8-cS-WcG">
+                                <rect key="frame" x="342" y="182" width="40" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="JZv-XB-YMl"/>
+                                    <constraint firstAttribute="height" constant="40" id="ZND-QJ-Jib"/>
+                                </constraints>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <action selector="closeButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="oMw-j0-V2e"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="D2f-QG-ABw" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="2fP-aI-ysy"/>
+                            <constraint firstItem="iFA-qy-p0s" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Hg8-7a-2cd"/>
+                            <constraint firstItem="3Ym-nW-wV3" firstAttribute="leading" secondItem="D2f-QG-ABw" secondAttribute="leading" constant="30" id="LfZ-NH-Tlw"/>
+                            <constraint firstItem="D2f-QG-ABw" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="T2y-I0-nhp"/>
+                            <constraint firstAttribute="bottom" secondItem="iFA-qy-p0s" secondAttribute="bottom" id="aVp-uy-6MX"/>
+                            <constraint firstItem="3Ym-nW-wV3" firstAttribute="top" secondItem="D2f-QG-ABw" secondAttribute="top" constant="30" id="dJJ-c2-Pnb"/>
+                            <constraint firstItem="Il8-cS-WcG" firstAttribute="trailing" secondItem="D2f-QG-ABw" secondAttribute="trailing" constant="18" id="ipS-wD-hHj"/>
+                            <constraint firstItem="3Ym-nW-wV3" firstAttribute="trailing" secondItem="D2f-QG-ABw" secondAttribute="trailing" constant="-30" id="jny-GI-CLx"/>
+                            <constraint firstItem="iFA-qy-p0s" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="rGp-IL-eVB"/>
+                            <constraint firstItem="3Ym-nW-wV3" firstAttribute="bottom" secondItem="D2f-QG-ABw" secondAttribute="bottom" constant="-30" id="u6g-Ub-Jz9"/>
+                            <constraint firstItem="Il8-cS-WcG" firstAttribute="top" secondItem="D2f-QG-ABw" secondAttribute="top" constant="-18" id="wIg-nI-l0L"/>
+                            <constraint firstItem="iFA-qy-p0s" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="xZW-VJ-Jqe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="D2f-QG-ABw" id="pJE-oC-FxP"/>
+                        <outlet property="bordersSwitch" destination="SrI-aL-Oee" id="M8z-J0-Nu1"/>
+                        <outlet property="closeButton" destination="Il8-cS-WcG" id="amM-F1-b5v"/>
+                        <outlet property="deleteCityButton" destination="qas-pd-X9T" id="MXo-F1-8iS"/>
+                        <outlet property="musicSwitch" destination="Sas-tb-VVy" id="k7c-oP-gHa"/>
+                        <outlet property="soundEffectsSwitch" destination="b45-eR-nuX" id="CjI-sV-amH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="58.928571428571423"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="2236" height="4663"/>
+    </resources>
+</document>
